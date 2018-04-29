@@ -113,7 +113,7 @@ namespace usubot.End2EndTests
         {
             // check is empty
             var getResponse = await _client.GetStringAsync("/api/LessonSignalEndpoint");
-            var values = ParseJson<LessonSignalDto[]>(getResponse);
+            var values = JsonConvert.DeserializeObject<LessonSignalDto[]>(getResponse);
             values.Length.Should().Be(0);
             
             // create
@@ -220,7 +220,7 @@ namespace usubot.End2EndTests
                 yield return row[0].ToString();
             }
         }
-
+        
         private T ParseJson<T>(string json)
         {
             return JsonConvert.DeserializeObject<T>(json, new JsonSerializerSettings

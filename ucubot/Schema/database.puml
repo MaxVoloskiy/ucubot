@@ -1,10 +1,16 @@
 @startuml
 
 class LessonSignal {
-long Id
-DateTime Timestamp
-int SignalType 
-string UserId
+    long Id
+    DateTime Timestamp
+    int SignalType 
+    string UserId
 }
 
+class Student {
+    int Id
+    string Firstname
+    string LastName
+    string UserId
+}
 @enduml

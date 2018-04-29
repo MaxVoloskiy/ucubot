@@ -12906,11 +12906,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/max_voloskiy/Desktop/new/ucubot/ucubot.csproj",
+      "projectUniqueName": "/home/max_voloskiy/Downloads/ucubot-learning/ucubot/ucubot.csproj",
       "projectName": "ucubot",
-      "projectPath": "/home/max_voloskiy/Desktop/new/ucubot/ucubot.csproj",
+      "projectPath": "/home/max_voloskiy/Downloads/ucubot-learning/ucubot/ucubot.csproj",
       "packagesPath": "/home/max_voloskiy/.nuget/packages/",
-      "outputPath": "/home/max_voloskiy/Desktop/new/ucubot/obj/",
+      "outputPath": "/home/max_voloskiy/Downloads/ucubot-learning/ucubot/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/max_voloskiy/Desktop/new/ucubot/ucubot.csproj",
+    "projectUniqueName": "/home/max_voloskiy/Downloads/ucubot-learning/ucubot/ucubot.csproj",
     "projectName": "ucubot",
-    "projectPath": "/home/max_voloskiy/Desktop/new/ucubot/ucubot.csproj",
-    "outputPath": "/home/max_voloskiy/Desktop/new/ucubot/obj/",
+    "projectPath": "/home/max_voloskiy/Downloads/ucubot-learning/ucubot/ucubot.csproj",
+    "outputPath": "/home/max_voloskiy/Downloads/ucubot-learning/ucubot/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/share/dotnet/sdk/NuGetFallbackFolder"

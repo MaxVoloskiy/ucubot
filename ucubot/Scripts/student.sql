@@ -1,0 +1,10 @@
+CREATE TABLE student ( 
+    id INT NOT NULL AUTO_INCREMENT,
+    FirstName VARCHAR(255),
+    SecondName VARCHAR(255),
+    user_id TINYTEXT,
+    PRIMARY KEY (id)
+);
+
+ALTER TABLE users ADD grade_id SMALLINT UNSIGNED NOT NULL DEFAULT 0;
+ALTER TABLE users ADD CONSTRAINT fk_grade_id FOREIGN KEY (grade_id) REFERENCES grades(id);
