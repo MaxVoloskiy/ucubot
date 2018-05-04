@@ -84,28 +84,13 @@ namespace ucubot.Controllers
             connection.Open();
             var command = connection.CreateCommand();
             
-            
-            
-            MySqlCommand check_User_Id = new MySqlCommand("SELECT COUNT(*) FROM lesson_signal WHERE (student_id = @userId)" , connection);
-            check_User_Id.Parameters.AddWithValue("@userId", userId);
-            int UserExist = (int)check_User_Id.ExecuteScalar();
-
-            if(UserExist > 0)
+            command.CommandText =
+                "INSERT INTO lesson_signal (user_id, signal_type) VALUES (@userId, @signalType);";
+            command.Parameters.AddRange(new[]
             {
-                //Username exist
-                command.CommandText =
-                    "INSERT INTO lesson_signal (user_id, signal_type) VALUES (@userId, @signalType);";
-                command.Parameters.AddRange(new[]
-                {
-                    new MySqlParameter("userId", userId),
-                    new MySqlParameter("signalType", signalType)
-                });
-            }
-            else
-            {
-                //Username doesn't exist.
-                return BadRequest();
-            }
+                new MySqlParameter("userId", userId),
+                new MySqlParameter("signalType", signalType)
+            });
             
             await command.ExecuteNonQueryAsync();
             
